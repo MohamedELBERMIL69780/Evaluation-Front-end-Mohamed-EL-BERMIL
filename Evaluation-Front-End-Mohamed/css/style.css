@@ -28,7 +28,7 @@
 
 header {
     background: #f4f4f4;
-    padding: 1em;
+    padding: 2em 1em;
     display: flex;
     justify-content: space-around;
     align-items: inherit;
@@ -66,6 +66,7 @@ nav ul>p{
 
 .ElementNav{
     display: flex;
+    margin-top: 3em;
 }
 
 .ElementNav a{
@@ -94,7 +95,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 2em;
 }
+
+
 
 /* Catalogue d'accessoires */
 
@@ -182,17 +186,44 @@ main {
 
 
 
+
+
+
 /* ---------------Footer----------------- */
 
 footer {
     background: #373737;
     padding: 4em 0em;
+    position: relative;
 }
 
-.pictogramme-groupe{
+.bloc-footer{
     display: flex;
     justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: -2em;
 }
+
+.rectangle-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.rectangle-footer a{
+    margin: 0 1em;
+    color: black;
+}
+
+.rectangle-footer a:hover{
+    color: #e79910 ;
+}
+
+
 
 .pictogramme-texte{
     display: flex;
@@ -215,11 +246,15 @@ footer {
 }
 
 .pictogramme-groupe {
-    /* margin: 1em 1em; */
     color: #fff;
     font-size: 13px;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+
 
 hr {
     height: 2px;
@@ -228,8 +263,6 @@ hr {
     margin: 2em auto;
     width: 90%;
     align-items: center;
-    /* display: flex; */
-    /* justify-content: center; */
 }
 
 .reseaux-sociaux{
@@ -255,7 +288,7 @@ hr {
 @media screen and (max-width:576px) {
 
     main{
-        padding-top: 17em;
+        padding-top: 21em;
     }
 
     .catalogue-accessoires {

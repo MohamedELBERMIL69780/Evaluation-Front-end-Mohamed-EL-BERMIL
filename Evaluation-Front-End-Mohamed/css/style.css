@@ -1,0 +1,317 @@
+/* Reset de la page */
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* Police d'écriture */
+     @font-face {
+      font-family: 'Open Sans';
+      src: url('../fonts/LiberationSans-Regular-webfont.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;    
+    }
+
+
+
+
+
+
+/* ---------------Header----------------- */
+
+header {
+    background: #f4f4f4;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: inherit;
+    z-index: 124;
+}
+
+.img-utilisateur{
+    display: flex;
+    flex-direction: column;
+}
+
+.img-utilisateur>img{
+    width: 13em;
+    margin-bottom: 1em;
+}
+
+.img-utilisateur p {
+    font-size: 17px;
+    margin-bottom: 1em;
+}
+
+.img-utilisateur span{
+    color: #ee9a0c;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+nav ul>p{
+    margin-bottom: 2em;
+}
+
+.ElementNav{
+    display: flex;
+}
+
+.ElementNav a{
+    color: black;
+    margin-left: 1em;
+}
+
+.ElementNav a:hover{
+    color: #ee9a0c;
+}
+
+
+/* ---------------Main----------------- */
+main {
+    background: #1c1c1c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1em;
+}
+
+#interface-site{
+    background: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Catalogue d'accessoires */
+
+.remise{
+    position: absolute;
+    z-index: 1;
+    background: #2a2825;
+    padding: 10px 20px;
+    border-radius: 9px;
+    text-align: 0;
+    top: 0;
+    right: -2em;
+    top: 1em;
+}
+
+
+.catalogue-accessoires {
+    padding: 3em 0em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 64%;
+}
+
+.accessoire{
+    width: 16em;
+    margin: 2em 0em;
+    position: relative;
+}
+
+.accessoire span{
+    color: #e79910;
+    font-weight: 700;
+}
+
+.accessoire img {
+    width: 16em;
+    margin-bottom: -4px;
+}
+.accessoire>p {
+    background: #fff;
+    padding: 1em;
+    text-transform: capitalize;
+    font-size: 14px;
+    text-align: center;
+}
+
+.btn-price{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+}
+
+.accessoire a {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    background: #2e2e2e;
+    color: #fff;
+    padding: 10px;
+}
+
+.accessoire a:hover{
+    background: #191919;
+}
+
+
+.price{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.price p{
+    text-decoration: line-through;
+}
+
+.price span{
+    margin: 0 7px
+}
+
+
+
+/* ---------------Footer----------------- */
+
+footer {
+    background: #373737;
+    padding: 4em 0em;
+}
+
+.pictogramme-groupe{
+    display: flex;
+    justify-content: center;
+}
+
+.pictogramme-texte{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.pictogramme-texte img{
+    width: 4em;
+}
+
+.pictogramme-texte p{
+    width: 19em;
+}
+
+.pictogramme-texte>p{
+    margin: 1em 0;
+}
+
+.pictogramme-groupe {
+    /* margin: 1em 1em; */
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+}
+
+hr {
+    height: 2px;
+    background: #818181;
+    border: none;
+    margin: 2em auto;
+    width: 90%;
+    align-items: center;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+.reseaux-sociaux{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reseaux-sociaux img{
+    margin: 0 1em;
+}
+
+#Copyright{
+    text-align: center;
+    color: #fff;
+    margin-top: 4em;
+}
+
+
+
+/* Responsive mobile */
+
+@media screen and (max-width:576px) {
+
+    main{
+        padding-top: 17em;
+    }
+
+    .catalogue-accessoires {
+        padding: 3em 0em;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .pictogramme-groupe {
+        flex-wrap: wrap;
+        margin: 1em 0;
+    }
+
+    .img-utilisateur {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #interface-site{
+        width: 100%;
+        align-items:initial ;
+    }
+
+    .ElementNav a {
+        margin: 0;
+        font-size: 23px;
+        padding: 18px 24px;
+    }
+
+
+    .ElementNav a:hover{
+        background: #d5d5d5;
+    }
+
+    header{
+        flex-direction: column;
+        position: fixed;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 1em 0px;
+    }
+
+    .img-utilisateur>img {
+        margin: 2em;
+    }
+
+    nav ul>p {
+        margin-bottom: 1em;
+        margin-left: 24px;
+        font-size: 21px;
+    }
+}

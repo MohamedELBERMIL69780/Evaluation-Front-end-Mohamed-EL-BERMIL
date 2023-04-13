@@ -205,6 +205,13 @@ footer {
     top: -2em;
 }
 
+.rond{
+    background: #d2d2d2;
+    width: 11px;
+    height: 11px;
+    border-radius: 44px;
+}
+
 .rectangle-footer{
     display: flex;
     justify-content: center;
